@@ -1,6 +1,5 @@
 *{margin: 0;padding: 0;box-sizing: border-box;}
 a{text-decoration: none;font-weight: bolder;
-    font-size: 17px;
     color: white;}
 li{list-style: none;}
 body,html{height: 100%;}
@@ -124,6 +123,20 @@ section a{
 .article-more-link a:hover{
     color: #0c3131;
 }
+.paginator{
+    text-align: center;
+}
+.page-number{
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #000;
+    margin: 0 5px;
+    background: #000;
+
+}
+.current{
+    background: #fff0ff;
+}
 
 #sidebar{
     width: 280px;
@@ -189,4 +202,13 @@ section a{
 #footer p{
     margin-bottom: 15px;
     letter-spacing: .2em;
+}
+
+.archive h2{
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+.archive a,.archive time{
+    margin-right:15px;
+
 }

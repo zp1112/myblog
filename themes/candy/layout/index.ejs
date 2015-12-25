@@ -19,6 +19,9 @@
                     <%- partial('_partial/article', {post: post, index: true}) %>
                     <% }) %>
                 </div>
+                <div class="paginator">
+                    <%- paginator({show_all: true, prev_next: false}) %>
+                </div>
             </div>
                 <%- partial('_partial/sidebar') %>
         </div>

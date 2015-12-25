@@ -3,7 +3,7 @@ window.onload = function () {
     var top_h = document.getElementById('top').offsetHeight;
     var bg_h = document.body.clientHeight - top_h;
     var avatar = document.getElementsByClassName('avatar')[0];
-    if(bg){
+    if (bg) {
         avatar.style.display = '';
         bg.style.height = bg_h + 'px';
     }
@@ -19,7 +19,7 @@ window.onload = function () {
             avatar.style.display = 'block';
         }
         else {
-            if(bg){
+            if (bg) {
                 avatar.style.display = '';
             }
             top.className = '';
@@ -32,9 +32,9 @@ window.onload = function () {
             s.style.marginTop = (scrollTop - t_h) + 'px';
 
             var mr = document.getElementsByClassName('mrright');
-            var mr_h = mr[(mr.length - 2)].offsetTop;
+            var mr_h = mr[(mr.length - 2) < 0 ? 0 : (mr.length - 2)].offsetTop;
             if (s.offsetTop > mr_h) {
-                s.style.marginTop = mr_h -top_h + 'px';
+                s.style.marginTop = mr_h - top_h + 'px';
             }
         }
         else {
