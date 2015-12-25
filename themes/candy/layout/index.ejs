@@ -1,0 +1,29 @@
+<%- partial('_partial/head') %>
+<body>
+<div id="container">
+    <div id="wrap">
+        <%- partial('_partial/header')%>
+        <div id="git">
+            <a href="#">fork me on github</a>
+        </div>
+        <div id="bg">
+            <div id="info">
+                <img src="/head.jpg" alt="#">
+                <p>good good study,day day up</p>
+            </div>
+        </div>
+        <div id="main">
+            <div id="content">
+                <div class="timeline">
+                    <% page.posts.each(function(post){ %>
+                    <%- partial('_partial/article', {post: post, index: true}) %>
+                    <% }) %>
+                </div>
+            </div>
+                <%- partial('_partial/sidebar') %>
+        </div>
+        <%- partial('_partial/footer') %>
+    </div>
+</div>
+</body>
+</html>
